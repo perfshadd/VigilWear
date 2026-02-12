@@ -46,7 +46,7 @@ function Login({ setIsLoggedIn }) {
             </svg>
           </div>
           <div className="logo-text">
-            <span>HashPlus</span>
+            <span>Vigil Wear</span>
             <small>Admin Access</small>
           </div>
         </div>

@@ -1,4 +1,4 @@
-function SideBar({ isOpen, activePage, onPageChange , onLogOut }) {
+function SideBar({ isOpen, activePage, onPageChange, onLogOut }) {
   const navItems = [
     { id: "Dashboard", label: "Dashboard", iconKey: "dashboard" },
     { id: "Products", label: "Products", iconKey: "products" },
@@ -87,8 +87,8 @@ function SideBar({ isOpen, activePage, onPageChange , onLogOut }) {
               fill="rgba(255,255,255,0.92)"
             />
           </svg>
-        </span>       
-VigilWear
+        </span>
+        VigilWear
       </h2>
 
       <ul>
@@ -104,7 +104,9 @@ VigilWear
             {item.label}
           </li>
         ))}
-        <button className="logout-btn" onClick={onLogOut}>Log Out</button>
+        <button className="logout-btn" onClick={onLogOut}>
+          Log Out
+        </button>
       </ul>
     </aside>
   );

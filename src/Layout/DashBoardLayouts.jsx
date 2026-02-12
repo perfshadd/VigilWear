@@ -4,8 +4,8 @@ import MainContent from "../components/MainContent";
 import { useState } from "react";
 import { productData } from "../data/data.js";
 import { ordersData } from "../data/ordersData.js";
-import "../styles/sidebar.css";
-import "../styles/Products.css";
+import "../Styles/sidebar.css";
+import "../Styles/Products.css";
 import { useNavigate } from "react-router-dom"
 
 

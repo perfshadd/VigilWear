@@ -1,0 +1,240 @@
+.alerts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.alerts-header {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.alerts-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.alerts-stats .stat-card {
+  padding: 14px 16px;
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.alerts-stats .stat-card.danger {
+  border-color: rgba(239, 68, 68, 0.35);
+  color: #ff9db6;
+}
+
+.alerts-stats .stat-card.warning {
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #ffd18a;
+}
+
+.alerts-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.alerts-actions input,
+.alerts-actions select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  outline: none;
+  height: 42px;
+}
+
+.alerts-actions input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.toggle-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 13px;
+}
+
+.toggle-pill input {
+  accent-color: #7f5aff;
+}
+
+.bulk-btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #7f5aff, #4cc9f0);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  height: 42px;
+}
+
+.alerts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+
+}
+
+.alert-card {
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.alert-card.critical {
+  border-color: rgba(239, 68, 68, 0.4);
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.alert-card.warning {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.alert-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.alert-top h3 {
+  margin: 0;
+}
+
+.alert-top p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.badge.critical {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ff9db6;
+}
+
+.badge.warning {
+  background: rgba(245, 158, 11, 0.2);
+  color: #ffd18a;
+}
+
+.alert-body p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.alert-body small {
+  opacity: 0.7;
+}
+
+.alert-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.alert-actions button {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.empty-state {
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.light-theme .alerts-stats .stat-card,
+.light-theme .alert-card {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.light-theme .alerts-stats .stat-card.danger {
+  border-color: rgba(220, 38, 38, 0.45);
+  color: #b91c1c;
+}
+
+.light-theme .alerts-stats .stat-card.warning {
+  border-color: rgba(217, 119, 6, 0.45);
+  color: #b45309;
+}
+
+.light-theme .alert-card.critical {
+  border-color: rgba(220, 38, 38, 0.45);
+  background: rgba(220, 38, 38, 0.08);
+}
+
+.light-theme .alert-card.warning {
+  border-color: rgba(217, 119, 6, 0.45);
+  background: rgba(217, 119, 6, 0.08);
+}
+
+.light-theme .badge.critical {
+  background: rgba(220, 38, 38, 0.2);
+  color: #b91c1c;
+}
+
+.light-theme .badge.warning {
+  background: rgba(217, 119, 6, 0.2);
+  color: #b45309;
+}
+
+.light-theme .alerts-actions input,
+.light-theme .alerts-actions select,
+.light-theme .alert-actions button {
+  background: #fff;
+  color: #1f2937;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+}
+
+.light-theme .toggle-pill {
+  background: rgba(15, 23, 42, 0.04);
+  color: #1f2937;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.light-theme .empty-state {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px dashed rgba(15, 23, 42, 0.2);
+}

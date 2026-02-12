@@ -9,7 +9,7 @@ function Login({ setIsLoggedIn }) {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (email === "ShahadAlotaibi@hashplus.com" && password === "password123") {
+    if (email === "User@hashplus.com" && password === "12345") {
       setIsLoggedIn(true);
       navigate("/dashboard");
       setError("");
@@ -55,12 +55,12 @@ function Login({ setIsLoggedIn }) {
         {error && <p className="error-message">{error}</p>}
           <div className="form-field">
             <label>Email</label>
-            <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
+            <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="User@hashplus.com" required />
           </div>
 
           <div className="form-field">
             <label>Password</label>
-            <input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
+            <input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="12345" required />
           </div>
 
           <button type="submit" >Log In</button>

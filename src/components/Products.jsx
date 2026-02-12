@@ -1,8 +1,17 @@
 import { useState } from "react";
-const productImages = Array.from(
-  { length: 21 },
-  (_, i) => `/src/assets/Products-images/${i + 1}.png`,
-);
+
+const imageModules = import.meta.glob("../assets/Products-images/*.png", {
+  eager: true,
+  import: "default",
+});
+
+const productImages = Object.keys(imageModules)
+  .sort((a, b) => {
+    const numA = Number(a.match(/(\d+)\.png$/)?.[1] || 0);
+    const numB = Number(b.match(/(\d+)\.png$/)?.[1] || 0);
+    return numA - numB;
+  })
+  .map((key) => imageModules[key]);
 
 function Products({ products, setProducts, onAddToCart, formatCurrency }) {
   const [showForm, setShowForm] = useState(false);

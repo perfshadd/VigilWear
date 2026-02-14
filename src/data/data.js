@@ -259,17 +259,4 @@ export const productData = [
     imageId: 19,
     price: 129.99,
   },
-  {
-    id: "SAF-21",
-    name: "Smart Shoe Insoles",
-    category: "Wearables",
-    battery: "70%",
-    status: "Connected",
-    alerts: 0,
-    lastSync: "6 min ago",
-    stock: 1,
-    active: true,
-    imageId: 20,
-    price: 89.99,
-  },
 ];

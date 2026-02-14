@@ -1,12 +1,12 @@
 import { useState } from "react";
 import DashBoardLayouts from "./Layout/DashBoardLayouts";
 import {
-  BrowserRouter as Router,
   Route,
   Routes,
   Navigate,
   BrowserRouter,
 } from "react-router-dom";
+
 import Login from "./pages/Login";
 
 function App() {

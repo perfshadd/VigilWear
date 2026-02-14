@@ -247,9 +247,15 @@ function Orders({ orders, setOrders, products, setProducts, formatCurrency }) {
                   onChange={handleInputChange}
                   required
                 >
-                  <option value="">Select product</option>
+                  <option value="">
+                    {formData.productName ? formData.productName : "Select product"}
+                  </option>
                   {products
-                    .filter((item) => Number(item.stock) > 0)
+                    .filter(
+                      (item) =>
+                        Number(item.stock) > 0 ||
+                        String(item.id) === String(formData.productId)
+                    )
                     .map((item) => (
                       <option key={item.id} value={item.id}>
                         {item.name}

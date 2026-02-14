@@ -2,9 +2,10 @@
 
 You can watch the project video here:
 
-[Click here to watch the video](https://drive.google.com/uc?export=download&id=19PEud1sLJGHfQecVAjP4rOlfwm-5E9zr)
+[Click here to watch the video](https://drive.google.com/file/d/19PEud1sLJGHfQecVAjP4rOlfwm-5E9zr/view?usp=sharing)
 
 *Note: The video will open in Google Drive for viewing.*
+
 
 
 # React + Vite
